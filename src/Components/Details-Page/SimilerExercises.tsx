@@ -4,6 +4,7 @@ import { GridLoader } from "react-spinners";
 import { CSSProperties } from "react";
 import ExerciseCard from "../Main-Page/ExerciseCard";
 import { exerciseObj } from "../../all.types";
+import Footer from "../Main-Page/Footer";
 
 type SimmilerExerciseProp = {
   TargertExercises: any[];
@@ -48,17 +49,6 @@ const SimilerExercises = ({
         mt: { lg: "100px", xs: "0px" },
       }}
     >
-      <Typography
-        variant="h3"
-        sx={{
-          mb: "40px",
-        }}
-      >
-        Exercises of same muscle{" "}
-        <span style={{ color: "#ff2625" }}>
-          {/* ({TargertExercises[1][0].bodyPart}) */}
-        </span>{" "}
-      </Typography>
       <Stack
         direction="row"
         flexWrap="wrap"
@@ -75,7 +65,20 @@ const SimilerExercises = ({
               <ExerciseCard data={item} key={item.id} />
             ))}
       </Stack>
+      <Footer />
     </Box>
   );
 };
 export default SimilerExercises;
+
+// <Typography
+//   variant="h3"
+//   sx={{
+//     mb: "40px",
+//   }}
+// >
+//   Exercises of same muscle{" "}
+//   <span style={{ color: "#ff2625" }}>
+//     {/* ({TargertExercises[1][0].bodyPart}) */}
+//   </span>{" "}
+// </Typography>

@@ -30,7 +30,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/exercises/:id" element={<ExersizeDetails />} />
       </Routes>
-      <Footer />
     </Box>
   );
 }
