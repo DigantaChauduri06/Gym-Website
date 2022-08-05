@@ -1,0 +1,11 @@
+Mui: 
+->Box: Box is a just a div with some shading 
+->Stack: The Stack component manages layout of immediate children along the vertical or horizontal axis with
+optional spacing and/or dividers between each child. 
+->Typography: Just a p tag
+-> sx: It is a prop which enables us to get extra styles and by using md, xs,
+sm we can give media query
+-> sx={{
+    mt: { lg: "122px", xs: "70px" },
+  }}
+  here mt means margin top and lg break point min-width 1200px and xs break point is under 1200px 
